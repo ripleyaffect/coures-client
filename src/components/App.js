@@ -2,9 +2,11 @@ import React from 'react'
 
 import Navbar from './Navbar'
 
-const App = () => {
+const App = ({ children }) => {
+  console.log(children)
   return <div className="app">
     <Navbar />
+    {children}
   </div>
 }
 
