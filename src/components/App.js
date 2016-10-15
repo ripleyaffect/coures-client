@@ -6,7 +6,9 @@ const App = ({ children }) => {
   console.log(children)
   return <div className="app">
     <Navbar />
-    {children}
+    <div className="page-container">
+      {children}
+    </div>
   </div>
 }
 
